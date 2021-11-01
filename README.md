@@ -1,7 +1,7 @@
 <h1 align="center">cumprimente.me</h1>
 
 ## Descrição do Projeto
-<p align="center">cumprimente.me é uma aplicação desenvolvida pelo aluno Matheus Antunes Vieira como requisito parcial para conclusão da disciplina Desenvolvimento de Aplicações Corporativas - 2021.2, ministrada pelo professor José Viterbo Filho na Universidade Federal Fluminense.</p>
+<p align="center"><b>cumprimente.me</b> é uma aplicação desenvolvida pelo aluno <a href="https://github.com/Mathunes" target="_blank">Matheus Antunes Vieira</a> como requisito parcial para conclusão da disciplina Desenvolvimento de Aplicações Corporativas - 2021.2, ministrada pelo professor <a href="https://github.com/jviterbo" target="_blank">José Viterbo Filho</a> na Universidade Federal Fluminense.</p>
 
 ### Features
 
