@@ -96,11 +96,14 @@ body .container-card .card:hover {
     color: #000;
 }
 
-
 body footer p {
     transition: color .3s;
     text-transform: lowercase;
     font-size: 18px;
+}
+
+.modal .modal-dialog .modal-content .modal-body p a {
+    color: #333;
 }
 
 body footer p:hover {
