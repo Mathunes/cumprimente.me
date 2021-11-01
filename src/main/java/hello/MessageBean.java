@@ -1,6 +1,5 @@
 package hello;
 
-import java.beans.*;
 import java.io.Serializable;
 import java.util.Random;
 
@@ -18,7 +17,7 @@ public class MessageBean implements Serializable {
     public void setMsg(String lang) {      
         Random rand = new Random();
         
-        int randomNumber = rand.nextInt(5);
+        int randomNumber = rand.nextInt(10);
         
         switch (randomNumber) {
             case 0:
@@ -106,6 +105,91 @@ public class MessageBean implements Serializable {
                         break;
                     default:
                         msg = "Coragem não é ausência de medo; é persistência apesar do medo.";
+                        break;
+                }      
+            
+            case 5:
+                
+                switch (lang) {
+                    case "en":
+                        msg = "Before saying you can't do something, give it a try.";
+                        break;
+                    case "de":
+                        msg = "Bevor Sie sagen, dass Sie etwas nicht tun können, probieren Sie es aus.";
+                        break;
+                    case "fr":
+                        msg = "Avant de dire que vous ne pouvez pas faire quelque chose, essayez-le.";
+                        break;
+                    default:
+                        msg = "Antes que diga que não consegue fazer alguma coisa, experimente.";
+                        break;
+                }
+            
+            case 6:
+                
+                switch (lang) {
+                    case "en":
+                        msg = "You can have results or excuses, not both.";
+                        break;
+                    case "de":
+                        msg = "Sie können Ergebnisse oder Ausreden haben, nicht beides.";
+                        break;
+                    case "fr":
+                        msg = "Vous pouvez avoir des résultats ou des excuses, pas les deux.";
+                        break;
+                    default:
+                        msg = "Você pode ter resultados ou desculpas, não ambos.";
+                        break;
+                }
+                
+            case 7:
+                
+                switch (lang) {
+                    case "en":
+                        msg = "Discipline is the bridge between goals and achievements.";
+                        break;
+                    case "de":
+                        msg = "Disziplin ist die Brücke zwischen Zielen und Erfolg.";
+                        break;
+                    case "fr":
+                        msg = "La discipline est le pont entre les objectifs et les réalisations.";
+                        break;
+                    default:
+                        msg = "Disciplina é a ponte entre metas e realizações.";
+                        break;
+                }
+                
+            case 8:
+                
+                switch (lang) {
+                    case "en":
+                        msg = "Always deliver more than expected.";
+                        break;
+                    case "de":
+                        msg = "Liefern Sie immer mehr als erwartet.";
+                        break;
+                    case "fr":
+                        msg = "Livrez toujours plus que prévu.";
+                        break;
+                    default:
+                        msg = "Sempre entregue mais do que o esperado.";
+                        break;
+                }
+                
+            case 9:
+                
+                switch (lang) {
+                    case "en":
+                        msg = "If you don't like starting over, stop giving up.";
+                        break;
+                    case "de":
+                        msg = "Wenn Sie nicht gerne von vorne beginnen, hören Sie auf aufzugeben.";
+                        break;
+                    case "fr":
+                        msg = "Si vous n'aimez pas recommencer, arrêtez d'abandonner.";
+                        break;
+                    default:
+                        msg = "Se você não gosta de recomeçar, pare de desistir.";
                         break;
                 }
         }
