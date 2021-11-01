@@ -22,3 +22,4 @@ As seguintes tecnologias foram usadas na construção do projeto:
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
 - [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [Google Fonts](https://fonts.google.com/)
