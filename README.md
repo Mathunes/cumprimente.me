@@ -15,7 +15,7 @@
 
 ### Tecnologias
 
-As seguintes ferramentas foram usadas na construção do projeto:
+As seguintes tecnologias foram usadas na construção do projeto:
 
 - [Java](https://www.java.com/pt-BR/)
 - [Maven](https://maven.apache.org/)
