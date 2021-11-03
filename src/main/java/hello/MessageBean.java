@@ -73,7 +73,7 @@ public class MessageBean implements Serializable {
                         msg = "O insucesso é apenas uma oportunidade para recomeçar com mais inteligência.";
                         break;
                 }
-                
+                break;
             case 3:
                 
                 switch (lang) {
@@ -90,7 +90,7 @@ public class MessageBean implements Serializable {
                         msg = "Nossa maior fraqueza está em desistir. O caminho mais certo de vencer é tentar mais uma vez.";
                         break;
                 }
-                
+                break;
             case 4:
                 
                 switch (lang) {
@@ -107,7 +107,7 @@ public class MessageBean implements Serializable {
                         msg = "Coragem não é ausência de medo; é persistência apesar do medo.";
                         break;
                 }      
-            
+                break;
             case 5:
                 
                 switch (lang) {
@@ -124,7 +124,7 @@ public class MessageBean implements Serializable {
                         msg = "Antes que diga que não consegue fazer alguma coisa, experimente.";
                         break;
                 }
-            
+                break;
             case 6:
                 
                 switch (lang) {
@@ -141,7 +141,7 @@ public class MessageBean implements Serializable {
                         msg = "Você pode ter resultados ou desculpas, não ambos.";
                         break;
                 }
-                
+                break;
             case 7:
                 
                 switch (lang) {
@@ -158,7 +158,7 @@ public class MessageBean implements Serializable {
                         msg = "Disciplina é a ponte entre metas e realizações.";
                         break;
                 }
-                
+                break;
             case 8:
                 
                 switch (lang) {
@@ -175,7 +175,7 @@ public class MessageBean implements Serializable {
                         msg = "Sempre entregue mais do que o esperado.";
                         break;
                 }
-                
+                break;
             case 9:
                 
                 switch (lang) {
@@ -192,6 +192,7 @@ public class MessageBean implements Serializable {
                         msg = "Se você não gosta de recomeçar, pare de desistir.";
                         break;
                 }
+                break;
         }
 
     }
