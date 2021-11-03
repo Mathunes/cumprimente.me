@@ -13,6 +13,12 @@
 
 🤝<a href="https://cumprimente-me.herokuapp.com/" target="_blank"> cumprimente.me </a>🤝
 
+### Observações
+
+- O aprimoramento da página índice foi realizado utilizando o framework Bootstrap
+- O horário da saudação se baseia no servidor em que a aplicação está hospedada, sendo assim é, é possível que haja divergência com horário da máquina do usuário
+- O pronome de tratamento (sr./sra.) foi implementado apenas na funcionalidade <b>Saudação pelo método POST</b>
+
 ### Tecnologias
 
 As seguintes tecnologias foram usadas na construção do projeto:
