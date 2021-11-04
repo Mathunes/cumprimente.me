@@ -8,7 +8,7 @@
 - ✅ Saudação pelo método GET - Recebe dados pela URL para gerar uma saudação
 - ✅ Saudação pelo método POST - Recebe dados por um formulário para gerar uma saudação
 - ✅ Motivacional pelo método POST - Gera uma mensagem motivacional aleatória baseada no idioma selecionado*<br>
-<i>*Nova funcionalidade</i>
+<i style="opacity: .7">*Nova funcionalidade</i>
 
 ### Aplicação
 
