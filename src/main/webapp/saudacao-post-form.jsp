@@ -5,6 +5,8 @@
             
             <form action="alomundo" method="post">
                 
+                <input type="hidden" name="hour" id="hour" />
+                
                 <select class="form-control" name="lang" required="">
                     <option value="pt" selected>Selecione o idioma</option>
                     <option value="pt">Português</option>
@@ -41,4 +43,6 @@
             <a href="./">Voltar</a>
             
         </div>
+        
+        <script>document.getElementById("hour").value = new Date().getHours()</script>
 <%@include file="footer.jsp" %>

@@ -2,7 +2,7 @@
         
         <div class="container-card">
             
-            <a href=".\alomundo?lang=pt&nome=Fulano">
+            <a href="" id="link-get">
                 <div class="card text-center">
                     <h5 class="card-title">Saudação pelo método GET</h5>
                     <p class="card-text">Insira os dados na URL</p>
@@ -24,5 +24,8 @@
             </a>
             
         </div>
+        <script>
+            document.getElementById("link-get").href = ".\\alomundo?lang=pt&nome=Fulano&hour=" + new Date().getHours();
+        </script>
         
 <%@include file="footer.jsp" %>

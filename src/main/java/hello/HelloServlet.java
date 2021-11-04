@@ -13,8 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/alomundo")
 public class HelloServlet extends HttpServlet {
 
-    public String getSaudation(String lang, int pronoumId) {
-        int hour = LocalDateTime.now().getHour();
+    public String getSaudation(String lang, int pronoumId, int hour) {
         
         String msg = "";
         String pronoum = "";
@@ -26,7 +25,9 @@ public class HelloServlet extends HttpServlet {
                 else if (pronoumId == 2)
                     pronoum = "sra. ";
                 
-                if (hour < 12)
+                if (hour < 6)
+                    msg = "Boa madrugada, ";
+                else if (hour < 12)
                     msg = "Bom dia, ";
                 else if (hour < 18)
                     msg = "Boa tarde, ";
@@ -40,7 +41,9 @@ public class HelloServlet extends HttpServlet {
                 else if (pronoumId == 2)
                     pronoum = "mrs. ";
                 
-                if (hour < 12)
+                if (hour < 6)
+                    msg = "Good morning, ";
+                else if (hour < 12)
                     msg = "Good morning, ";
                 else if (hour < 18)
                     msg = "Good afternoon, ";
@@ -54,7 +57,9 @@ public class HelloServlet extends HttpServlet {
                 else if (pronoumId == 2)
                     pronoum = "mme. ";
                 
-                if (hour < 12)
+                if (hour < 6)
+                    msg = "Bonjour, ";
+                else if (hour < 12)
                     msg = "Bonjour, ";
                 else if (hour < 18)
                     msg = "Bon après-midi, ";
@@ -68,7 +73,9 @@ public class HelloServlet extends HttpServlet {
                 else if (pronoumId == 2)
                     pronoum = "frau ";
                 
-                if (hour < 12)
+                if (hour < 6)
+                    msg = "Guten Morgen, ";
+                else if (hour < 12)
                     msg = "Guten Morgen, ";
                 else if (hour < 18)
                     msg = "Guten Tag, ";
@@ -82,7 +89,9 @@ public class HelloServlet extends HttpServlet {
                 else if (pronoumId == 2)
                     pronoum = "señora ";
                 
-                if (hour < 12)
+                if (hour < 6)
+                    msg = "Buenos días, ";
+                else if (hour < 12)
                     msg = "Buen día, ";
                 else if (hour < 18)
                     msg = "Buenas tardes, ";
@@ -96,7 +105,9 @@ public class HelloServlet extends HttpServlet {
                 else if (pronoumId == 2)
                     pronoum = "la signora ";
                 
-                if (hour < 12) 
+                if (hour < 6)
+                    msg = "Buon giorno, ";
+                else if (hour < 12) 
                     msg = "Buon giorno, ";
                 else if (hour < 18) 
                     msg = "Buon pomeriggio, ";
@@ -112,6 +123,11 @@ public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        String hour = request.getParameter("hour");
+        
+        if (hour==null)
+            hour = Integer.toString(LocalDateTime.now().getHour());
+        
         String msg = "";
         
         String lang = request.getParameter("lang");
@@ -124,7 +140,7 @@ public class HelloServlet extends HttpServlet {
         if(nome==null)
             nome = "Fulano";
         
-        msg = getSaudation(lang, 0)+nome+"!";
+        msg = getSaudation(lang, 0, Integer.parseInt(hour))+nome+"!";
         
         request.setAttribute("msg", msg);
         RequestDispatcher saudacaoGet = getServletContext().getRequestDispatcher("/saudacao-get.jsp");
@@ -135,6 +151,8 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        String hour = request.getParameter("hour");
         
         String msg = "";
         
@@ -153,7 +171,7 @@ public class HelloServlet extends HttpServlet {
         if(nome==null)
             nome = "Fulano";
         
-        msg = getSaudation(lang, Integer.parseInt(pronome))+nome+"!";
+        msg = getSaudation(lang, Integer.parseInt(pronome), Integer.parseInt(hour))+nome+"!";
 
         request.setAttribute("msg", msg);
         RequestDispatcher saudacaoGet = getServletContext().getRequestDispatcher("/saudacao-post.jsp");
