@@ -27,5 +27,6 @@ As seguintes tecnologias foram usadas na construção do projeto:
 - [Maven](https://maven.apache.org/)
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
+- [Javascript](https://www.javascript.com/)
 - [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 - [Google Fonts](https://fonts.google.com/)
