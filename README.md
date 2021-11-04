@@ -12,7 +12,7 @@
 
 ### Aplicação
 
-🤝<a href="https://cumprimente-me.herokuapp.com/" target="_blank"> cumprimente.me </a>🤝
+- 🤝<a href="https://cumprimente-me.herokuapp.com/" target="_blank">cumprimente.me</a>
 
 ### Observações
 
