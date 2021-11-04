@@ -7,8 +7,8 @@
 
 - ✅ Saudação pelo método GET - Recebe dados pela URL para gerar uma saudação
 - ✅ Saudação pelo método POST - Recebe dados por um formulário para gerar uma saudação
-- ✅ Motivacional pelo método POST - Gera uma mensagem motivacional aleatória baseada no idioma selecionado*<br>
-<i style="opacity: .7">*Nova funcionalidade</i>
+- ✅ Motivacional pelo método POST - Gera uma mensagem motivacional aleatória baseada no idioma selecionado*<br><br>
+<i>*Nova funcionalidade</i>
 
 ### Aplicação
 
@@ -19,7 +19,7 @@
 - ⚙️ O aprimoramento da página índice foi realizado utilizando o framework Bootstrap
 - 🗺️ Idiomas adicionados: Espanhol e Italiano
 - 🕓 O horário da saudação se baseia no cliente (boa madrugada, bom dia, boa tarde e boa noite)*
-- 💬 O pronome de tratamento (sr./sra.) foi implementado apenas na funcionalidade <b>Saudação pelo método POST</b>*<br>
+- 💬 O pronome de tratamento (sr./sra.) foi implementado apenas na funcionalidade <b>Saudação pelo método POST</b>*<br><br>
 <i>*Leva em consideração os diferentes idiomas</i>
 
 ### Tecnologias
