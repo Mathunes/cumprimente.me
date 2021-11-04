@@ -16,6 +16,8 @@
 
 ### Observações
 
+- 📌 HelloServlet.java mantido
+- ♻️ MessageBean.java utilizado para desenvolver nova funcionalidade*
 - ⚙️ O aprimoramento da página índice foi realizado utilizando o framework Bootstrap
 - 🗺️ Idiomas adicionados: Espanhol e Italiano
 - 🕓 O horário da saudação se baseia no cliente (boa madrugada, bom dia, boa tarde e boa noite)*
